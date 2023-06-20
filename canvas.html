@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
+  <title>Canvas</title>
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -28,38 +28,14 @@
       </nav>
     </section>
   </header>
-  <main>
-    <div class="container">
-      <section class="gallery">
-        <h2>Image gallery</h2>
-        <div class="full-img">
-          <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a human eye">
-          <div class="overlay"></div>
-          <button class="dark">Darken</button>
-        </div>
-        <div class="thumb-bar"></div>
+  <div class="container">
+    <main>
+      <section class="canvas-block">
+        <h2>Bouncing Balls</h2>
+        <canvas></canvas>
       </section>
-      <section class="img-map">
-        <h2>Image Map</h2>
-        <img src="images/dogs-map.jpg" alt="Dog breeds" usemap="#dogmap">
-
-        <map name="dogmap">
-          <area shape="rect" coords="0,0,283,283" alt="Welsh Corgi Pembroke" target="_blank"
-            href="https://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi">
-          <area shape="rect" coords="283,0,566,283" alt="King Charles Spaniel" target="_blank"
-            href="https://en.wikipedia.org/wiki/Cavalier_King_Charles_Spaniel">
-          <area shape="rect" coords="566,0,845,283" alt="Pug" target="_blank" href="https://en.wikipedia.org/wiki/Pug">
-          <area shape="rect" coords="0,283,283,566" alt="Bull Terrier" target="_blank"
-            href="https://en.wikipedia.org/wiki/Bull_Terrier">
-          <area shape="rect" coords="283,283,566,566" alt="English Cocker Spaniel" target="_blank"
-            href="https://en.wikipedia.org/wiki/English_Cocker_Spaniel">
-          <area shape="rect" coords="566,283,845,566" alt="German Shorthaired Pointer" target="_blank"
-            href="https://en.wikipedia.org/wiki/German_Shorthaired_Pointer">
-        </map>
-
-      </section>
-    </div>
-  </main>
+    </main>
+  </div>
   <footer>
     <nav>
       <ul class="footer-navbar">
@@ -85,7 +61,7 @@
       </span>
     </div>
   </footer>
-  <script src="scripts/gallery.js"></script>
+  <script src="scripts/canvas.js"></script>
 </body>
 
 </html>

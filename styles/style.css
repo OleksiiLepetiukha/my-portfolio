@@ -75,6 +75,8 @@ footer {
 .footer-navbar {
     display: flex;
     gap: 1em;
+    border-bottom: #fff solid 1px;
+    padding: 1em;
 }
 
 .wraper {
@@ -83,6 +85,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 /* Geolocation */
 #myMap {
     border: 3px dashed green;
@@ -159,4 +162,11 @@ footer {
 
 .img-map img {
     width: 100%;
+}
+
+/* Canvas */
+
+.canvas-block {
+    overflow: hidden;
+    height: inherit;
 }
