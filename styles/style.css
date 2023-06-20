@@ -59,7 +59,30 @@ h2 {
     font-size: 1.3rem;
 }
 
-/* Map styles */
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.footer-navbar {
+    display: flex;
+    gap: 1em;
+}
+
+.wraper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #myMap {
     border: 3px dashed green;
@@ -135,6 +158,6 @@ h2 {
     cursor: pointer;
 }
 
-.img-map img{
+.img-map img {
     width: 100%;
 }
