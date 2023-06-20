@@ -83,7 +83,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Geolocation */
 #myMap {
     border: 3px dashed green;
     width: 100%;
@@ -143,10 +143,9 @@ footer {
 }
 
 .full-img button {
-    border: 0;
     background: rgba(150, 150, 150, 0.6);
-    text-shadow: 1px 1px 1px white;
-    border: 1px solid #999;
+    color: #fff;
+    border: none;
     position: absolute;
     cursor: pointer;
     top: 1%;
