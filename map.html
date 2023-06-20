@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Load resources from leaflet -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+
+<body>
+    <header>
+        <section class="header-menu">
+            <h1><a href="index.html">Alex L.</a></h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Canvas</a></li>
+                    <li><a href="map.html">Geoposition API</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Requests</a></li>
+                    <li><a href="">Web Sockets</a></li>
+                    <li><a href="">Local Storage</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <div class="container">
+        <main>
+            <section class="geolocation">
+                <h2>Your Geolocation</h2>
+                <p class="status"></p>
+                <p class="coordinates"></p>
+                <button id="find-me">Location</button>
+
+                <!-- Element to insert the map into -->
+                <div id="myMap"></div>
+            </section>
+    </div>
+    </main>
+    <!-- Load your javascript here -->
+    <script src="scripts/map.js"></script>
+</body>
+
+</html>
