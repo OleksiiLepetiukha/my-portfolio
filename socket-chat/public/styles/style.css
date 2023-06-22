@@ -1,0 +1,137 @@
+@import url('fonts.css');
+
+body {
+    font-size: 16px;
+    max-width: 1440px;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.header-menu h1 {
+    font-family: 'Kablammo';
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.navbar {
+    font-family: 'Teko';
+    display: flex;
+    gap: 2em;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.navbar a:hover {
+    font-size: 1.3rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.footer-navbar {
+    display: flex;
+    gap: 1em;
+    border-bottom: #fff solid 1px;
+    padding: 1em;
+}
+
+.wraper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.25em;
+    display: flex;
+    height: 3em;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+#input {
+    border: none;
+    padding: 0 1em;
+    flex-grow: 1;
+    border-radius: 2em;
+    margin: 0.25em;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#form>button {
+    background: green;
+    border: none;
+    padding: 0 1em;
+    margin: 0.25em;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#messages {
+    height: 20em;
+    border: rgba(0, 0, 0, 0.15) solid 1px;
+}
+
+#messages>li {
+    padding: 0.5em 1em;
+}
+
+#messages>li:nth-child(odd) {
+    background: #efefef;
+}
