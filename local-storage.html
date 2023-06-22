@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <section class="header-menu">
+      <h1><a href="index.html">Alex L.</a></h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+          <li><a href="map.html">Geoposition API</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="">Requests</a></li>
+          <li><a href="socket-chat/public/chat.html">Socket Chat</a></li>
+          <li><a href="">Local Storage</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <div class="container">
+    <main>
+      <section class="storage">
+      <h2>Web storage</h2>
+      <form>
+        <div class="form-control">
+          <label for="image">Choose Breed:</label>
+          <select id="image">
+            <option value="images/spaniel.jpg" selected>English cocker spaniel</option>
+            <option value="images/corgi.jpg">Welsh Corgi</option>
+            <option value="images/haski.jpg">Husky</option>
+            <option value="images/retriver.jpg">Golden retriever</option>
+            <option value="images/springer.jpg">English springer spaniel</option>
+          </select>
+        </div>
+      </form>
+      <img src="images/spaniel.jpg">
+    </section>
+    </main>
+  </div>
+  <footer>
+    <nav>
+      <ul class="footer-navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="map.html">Geoposition API</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="">Requests</a></li>
+        <li><a href="socket-chat/public/chat.html">Web Sockets</a></li>
+        <li><a href="">Local Storage</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="wraper">
+      <p>© 2023 Oleksii Lepetiukha</p>
+      <span class="social_media-links">
+        <a href="https://www.facebook.com/profile.php?id=100010600570405"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?i=10e7lp5g870z6&utm_content=qa5oa6n"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="linkedin.com/in/oleksii-lepetiukha-5a45b7242"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/OleksiiLepetiukha"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:alekseylepetukha@icloud.com"><i class="fa-solid fa-envelope"></i></a>
+      </span>
+    </div>
+  </footer>
+  <script src="scripts/local-storage.js"></script>
+</body>
+
+</html>
