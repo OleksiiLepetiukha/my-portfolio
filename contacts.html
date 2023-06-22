@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-menu">
+            <h1><a href="index.html">Alex L.</a></h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="map.html">Geoposition API</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Requests</a></li>
+                    <li><a href="socket-chat/public/chat.html">Web Sockets</a></li>
+                    <li><a href="">Local Storage</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <div class="container">
+        <main>
+            <section class="contacts">
+                <form class="callback-form" action="#">
+                    <a href="tel:+353874471364">+353 87 447 1364</a>
+                    <a href="mailto:alekseylepetukha@icloud.com">Mail Me</a>
+                    <h2>Send me your offer</h2>
+                    <div class="form-control">
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" required type="text" name="fullName">
+                        <div class="field-error"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input id="email" required type="email" name="email">
+                        <div class="field-error"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="story">Enter your message</label>
+                        <textarea id="story" required name="story"></textarea>
+                        <div class="field-error"></div>
+                    </div>
+                    <button type="submit"></button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <nav>
+            <ul class="footer-navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="map.html">Geoposition API</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="">Requests</a></li>
+                <li><a href="socket-chat/public/chat.html">Web Sockets</a></li>
+                <li><a href="">Local Storage</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="wraper">
+            <p>© 2023 Oleksii Lepetiukha</p>
+            <span class="social_media-links">
+                <a href="https://www.facebook.com/profile.php?id=100010600570405"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=10e7lp5g870z6&utm_content=qa5oa6n"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="linkedin.com/in/oleksii-lepetiukha-5a45b7242"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/OleksiiLepetiukha"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:alekseylepetukha@icloud.com"><i class="fa-solid fa-envelope"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="scripts/validation.js"></script>
+</body>
+
+</html>

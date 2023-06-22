@@ -14,7 +14,6 @@ a {
 .container {
     width: 90%;
     margin: 0 auto;
-
 }
 
 header {
@@ -26,6 +25,12 @@ h2 {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 1em 0;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .header-menu {
@@ -84,6 +89,64 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Home page */
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.target {
+    width: 20%;
+    padding: 10em;
+    background-image: url('../images/home-photo.jpg');
+    background-size: cover;
+    transition: background-image 1s ease-in;
+    cursor: pointer;
+    position: relative;
+}
+
+.traget-text {
+    color: #fff;
+    position: absolute;
+    top: 1%;
+    left: 33%;
+}
+
+.js-target {
+    background-image: url('../images/home-photo2.jpg');
+}
+
+.article-text p,
+.article-text ul {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: .5em;
+}
+
+.article-text li {
+    list-style-type: square;
+    margin-left: 1em;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+}
+
+.content video {
+    width: 100%;
+}
+
+/* Canvas */
+.canvas-block {
+    overflow: hidden;
+    height: inherit;
 }
 
 /* Geolocation */
@@ -164,9 +227,95 @@ footer {
     width: 100%;
 }
 
-/* Canvas */
+/* Local storage */
+.storage img {
+    width: 100%;
+}
 
-.canvas-block {
-    overflow: hidden;
-    height: inherit;
+/* Contacts page */
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+    gap: 2em;
+}
+
+/* form */
+.contacts {
+    background-image: url('../images/map.jpg');
+    background-size: cover;
+}
+
+.contacts .callback-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0.5em;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.contacts label,
+.contacts input,
+.contacts textarea {
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.form-control {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+textarea {
+    min-height: 10em;
+}
+
+.form-control input,
+.form-control textarea {
+    padding: 0.5em;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #000;
+    margin: 0.5em 0;
+}
+
+.contacts .callback-form a:first-child::before {
+    content: '\f2a0';
+    font-family: 'Font Awesome';
+    font-size: 1.2rem;
+    margin-right: 0.2em;
+}
+
+.contacts .callback-form a:nth-child(2)::before {
+    content: '\f0e0';
+    font-family: 'Font Awesome';
+    font-size: 1.2rem;
+    margin-right: 0.2em;
+}
+
+.field-error {
+    color: red;
+    font-weight: bold;
+}
+
+
+.contacts button {
+    width: 25%;
+    padding: 0.5em 1em;
+    background-color: green;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contacts button::before {
+    content: '\f1d8';
+    font-family: 'Font Awesome';
+    font-size: 1.2rem;
 }
