@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geolocation</title>
+    <title>Requests</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,15 +31,21 @@
     </header>
     <div class="container">
         <main>
-            <section class="geolocation">
-                <h2>Your Geolocation</h2>
-                <p class="status"></p>
-                <p class="coordinates"></p>
-                <button id="find-me">Location</button>
-                <div id="myMap"></div>
+            <div class="requests-wrapper">
+            <section class="ajax-request">
+                <h2>jQuery and AJAX</h2>
+                <button class="ajaxBtn">Get Data</button>
+                <div class="ajax-request-text"></div>
             </section>
+            <section class="xml-request">
+                <h2>The XMLHttpRequest</h2>
+                <button class="xmlBtn">Get cars list</button>
+                <table class="xml-request-table">
+                </table>
+            </section>
+        </div>
+        </main>
     </div>
-    </main>
     <footer>
         <nav>
             <ul class="footer-navbar">
@@ -70,7 +72,7 @@
             </span>
         </div>
     </footer>
-    <script src="scripts/map.js"></script>
+    <script src="scripts/requests.js"></script>
 </body>
 
 </html>

@@ -232,6 +232,55 @@ footer {
     width: 100%;
 }
 
+/* Requests */
+.requests-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.xml-request,
+.ajax-request {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 1em;
+}
+
+.xmlBtn,
+.ajaxBtn {
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    padding: .5em 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.ajax-request-text{
+    padding: 1em;
+}
+
+.xml-request-table,
+.xml-request-table th,
+.xml-request-table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.xml-request-table th,
+.xml-request-table td {
+    padding: .5em;
+}
+
+.xml-request-table th {
+    background-color: gray;
+}
+
 /* Contacts page */
 .contacts {
     width: 100%;

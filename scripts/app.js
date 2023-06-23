@@ -1,28 +1,8 @@
-// var card = document.querySelector(".card");
-// var playing = false;
 
-// card.addEventListener('click',function() {
-//   if(playing)
-//     return;
-  
-//   playing = true;
-//   anime({
-//     targets: card,
-//     scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
-//     rotateY: {value: '+=180', delay: 200},
-//     easing: 'easeInOutSine',
-//     duration: 400,
-//     complete: function(anim){
-//        playing = false;
-//     }
-//   });
-// });
+const target = document.querySelector('.target');
 
-// const trigger = document.querySelector('.trigger');
-        const target = document.querySelector('.target');
+target.addEventListener('click', changeTarget);
 
-        // trigger.addEventListener('click', changeTarget);
-
-        function changeTarget() {
-            target.classList.toggle('js-target');
-        }
+function changeTarget() {
+    target.classList.toggle('js-target');
+}

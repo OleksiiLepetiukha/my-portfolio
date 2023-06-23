@@ -1,0 +1,47 @@
+﻿  <Catalog>
+   <Cars>
+    <Car>Ford</Car>
+    <Year>2023</Year>
+    <Country>USA</Country>
+   </Cars>
+<Cars>
+    <Car>Mersedes</Car>
+    <Year>2020</Year>
+    <Country>Germany</Country>
+   </Cars>
+<Cars>
+    <Car>Toyota</Car>
+    <Year>2018</Year>
+    <Country>Japan</Country>
+   </Cars>
+<Cars>
+    <Car>KIA</Car>
+    <Year>2022</Year>
+    <Country>Korea</Country>
+   </Cars>
+   <Cars>
+    <Car>Fiat</Car>
+    <Year>2010</Year>
+    <Country>Italy</Country>
+   </Cars>
+<Cars>
+    <Car>Land Rover</Car>
+    <Year>2017</Year>
+    <Country>UK</Country>
+   </Cars>
+<Cars>
+    <Car>Renault</Car>
+    <Year>2018</Year>
+    <Country>France</Country>
+   </Cars>
+  <Cars>
+    <Car>Audi</Car>
+    <Year>2021</Year>
+    <Country>Germany</Country>
+   </Cars>
+   <Cars>
+    <Car>Honda</Car>
+    <Year>2010</Year>
+    <Country>Japan</Country>
+   </Cars>
+  </Catalog>
