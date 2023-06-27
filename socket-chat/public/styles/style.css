@@ -91,6 +91,8 @@ footer {
     align-items: center;
 }
 
+/* Chat style */
+
 #form {
     background: rgba(0, 0, 0, 0.15);
     padding: 0.25em;
@@ -124,14 +126,27 @@ footer {
 }
 
 #messages {
+    position: relative;
     height: 20em;
     border: rgba(0, 0, 0, 0.15) solid 1px;
 }
 
 #messages>li {
     padding: 0.5em 1em;
+    
 }
 
 #messages>li:nth-child(odd) {
-    background: #efefef;
+    background: rgba(0, 0, 0, 0.1);;
+}
+
+#messages .worcker-btn {
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5em 0;
 }

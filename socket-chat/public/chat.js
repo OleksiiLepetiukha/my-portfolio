@@ -18,3 +18,16 @@ socket.on('chat message', function(msg) {
   messages.appendChild(item);
   window.scrollTo(0, document.body.scrollHeight);
 });
+
+// Web Worker
+const worker = new Worker('worker.js');
+const btn = document.querySelector('.worcker-btn');
+
+btn.addEventListener('click', ()=>{
+  worker.postMessage('start Worker');
+    worker.onmessage = (message) =>{
+        messages.style.background = message.data;
+        messages.style.color = '#fff';
+        btn.style.color = '#fff';
+    }
+})
