@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requests</title>
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+    integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
@@ -27,6 +31,9 @@
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
+            <a href="javascript:void(0);" class="burger-menu" onclick="burger()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </section>
     </header>
     <div class="container">
@@ -73,6 +80,7 @@
         </div>
     </footer>
     <script src="scripts/requests.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
