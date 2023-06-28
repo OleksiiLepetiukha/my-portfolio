@@ -7,6 +7,9 @@
   <title>Socket Chat</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -26,11 +29,14 @@
           <li><a href="../../contacts.html">Contacts</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" class="burger-menu" onclick="burger()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </section>
   </header>
   <div class="container">
     <main>
-      
+
       <h2>Start your chat</h2>
       <ul id="messages">
         <button class="worcker-btn">Change background</button>
@@ -67,9 +73,8 @@
   </footer>
   <script src="/socket.io/socket.io.js"></script>
 
-  <script src="chat.js">
-
-  </script>
+  <script src="chat.js"></script>
+  <script src="burger.js"></script>
 </body>
 
 </html>

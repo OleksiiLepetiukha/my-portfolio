@@ -40,6 +40,7 @@ h3 {
     width: 90%;
     margin: 0 auto;
     padding: 2em 0;
+    position: relative;
 }
 
 .header-menu h1 {
@@ -64,6 +65,10 @@ h3 {
     font-size: 1.3rem;
 }
 
+.header-menu .burger-menu {
+    display: none;
+}
+
 /* Footer */
 
 footer {
@@ -82,6 +87,9 @@ footer {
     gap: 1em;
     border-bottom: #fff solid 1px;
     padding: 1em;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .wraper {
@@ -89,6 +97,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 
 /* Home page */
@@ -112,7 +121,10 @@ footer {
     color: #fff;
     position: absolute;
     top: 1%;
-    left: 33%;
+    left: 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center
 }
 
 .js-target {
@@ -147,6 +159,10 @@ footer {
 .canvas-block {
     overflow: hidden;
     height: inherit;
+}
+
+canvas {
+    width: 100%;
 }
 
 /* Geolocation */
@@ -232,6 +248,14 @@ footer {
     width: 100%;
 }
 
+.form-control {
+    font-size: 1rem;
+}
+
+#image {
+    font-size: .8rem;
+}
+
 /* Requests */
 .requests-wrapper {
     width: 100%;
@@ -245,21 +269,21 @@ footer {
     width: 40%;
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     gap: 1em;
+    font-size: 1rem;
 }
 
 .xmlBtn,
 .ajaxBtn {
     border: none;
     cursor: pointer;
-    width: 30%;
-    padding: .5em 0;
+    padding: .5em;
     background-color: #000;
     color: #fff;
 }
 
-.ajax-request-text{
+.ajax-request-text {
     padding: 1em;
 }
 
@@ -326,12 +350,14 @@ textarea {
 .form-control input,
 .form-control textarea {
     padding: 0.5em;
+    font-size: .8rem;
 }
 
 .contacts a {
     text-decoration: none;
     color: #000;
     margin: 0.5em 0;
+    font-size: 1rem;
 }
 
 .contacts .callback-form a:first-child::before {
@@ -351,6 +377,7 @@ textarea {
 .field-error {
     color: red;
     font-weight: bold;
+    font-size: .8rem;
 }
 
 
@@ -367,4 +394,84 @@ textarea {
     content: '\f1d8';
     font-family: 'Font Awesome';
     font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .header-menu {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .navbar {
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .header-menu {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .header-menu .burger-menu {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 80%;
+        left: 0;
+        gap: 0.5em;
+        width: 100%;
+        font-size: 1rem;
+        z-index: 20;
+    }
+
+    .target {
+        padding: 6em;
+    }
+
+    canvas {
+        height: 400px;
+    }
+
+    .requests-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ajax-request {
+        width: 100%;
+    }
 }

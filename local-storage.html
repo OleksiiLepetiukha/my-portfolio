@@ -7,6 +7,9 @@
   <title>Local Storage</title>
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -26,26 +29,29 @@
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" class="burger-menu" onclick="burger()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </section>
   </header>
   <div class="container">
     <main>
       <section class="storage">
-      <h2>Web storage</h2>
-      <form>
-        <div class="form-control">
-          <label for="image">Choose Breed:</label>
-          <select id="image">
-            <option value="images/spaniel.jpg" selected>English cocker spaniel</option>
-            <option value="images/corgi.jpg">Welsh Corgi</option>
-            <option value="images/haski.jpg">Husky</option>
-            <option value="images/retriver.jpg">Golden retriever</option>
-            <option value="images/springer.jpg">English springer spaniel</option>
-          </select>
-        </div>
-      </form>
-      <img src="images/spaniel.jpg">
-    </section>
+        <h2>Web storage</h2>
+        <form>
+          <div class="form-control">
+            <label for="image">Choose Breed:</label>
+            <select id="image">
+              <option value="images/spaniel.jpg" selected>English cocker spaniel</option>
+              <option value="images/corgi.jpg">Welsh Corgi</option>
+              <option value="images/haski.jpg">Husky</option>
+              <option value="images/retriver.jpg">Golden retriever</option>
+              <option value="images/springer.jpg">English springer spaniel</option>
+            </select>
+          </div>
+        </form>
+        <img src="images/spaniel.jpg">
+      </section>
     </main>
   </div>
   <footer>
@@ -74,6 +80,7 @@
     </div>
   </footer>
   <script src="scripts/local-storage.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 
 </html>

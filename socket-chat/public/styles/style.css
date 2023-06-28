@@ -40,6 +40,7 @@ h3 {
     width: 90%;
     margin: 0 auto;
     padding: 2em 0;
+    position: relative;
 }
 
 .header-menu h1 {
@@ -64,6 +65,10 @@ h3 {
     font-size: 1.3rem;
 }
 
+.header-menu .burger-menu {
+    display: none;
+}
+
 /* Footer */
 
 footer {
@@ -82,6 +87,9 @@ footer {
     gap: 1em;
     border-bottom: #fff solid 1px;
     padding: 1em;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .wraper {
@@ -89,6 +97,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 
 /* Chat style */
@@ -123,6 +132,7 @@ footer {
     outline: none;
     color: #fff;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 #messages {
@@ -133,11 +143,12 @@ footer {
 
 #messages>li {
     padding: 0.5em 1em;
-    
+
 }
 
 #messages>li:nth-child(odd) {
-    background: rgba(0, 0, 0, 0.1);;
+    background: rgba(0, 0, 0, 0.1);
+    ;
 }
 
 #messages .worcker-btn {
@@ -149,4 +160,55 @@ footer {
     cursor: pointer;
     font-weight: 600;
     padding: 0.5em 0;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 860px) {
+    .header-menu {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .navbar {
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .header-menu {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .header-menu .burger-menu {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 80%;
+        left: 0;
+        gap: 0.5em;
+        width: 100%;
+        font-size: 1rem;
+        z-index: 20;
+    }
+
 }
