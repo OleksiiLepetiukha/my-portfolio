@@ -1,0 +1,9 @@
+header,
+.header-menu,
+footer,
+video,
+.target,
+.form-control,
+button {
+    display: none !important;
+}
