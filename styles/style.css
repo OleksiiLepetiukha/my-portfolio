@@ -65,6 +65,7 @@ h3 {
     font-size: 1rem;
 }
 
+
 .header-menu .burger-menu {
     display: none;
 }
@@ -117,7 +118,7 @@ footer {
     position: relative;
 }
 
-.traget-text {
+.target-text {
     color: #fff;
     position: absolute;
     top: 1%;
@@ -265,8 +266,9 @@ canvas {
 }
 
 .xml-request,
-.ajax-request {
-    width: 40%;
+.ajax-request,
+.fethcApi {
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +277,8 @@ canvas {
 }
 
 .xmlBtn,
-.ajaxBtn {
+.ajaxBtn,
+.apiBtn {
     border: none;
     cursor: pointer;
     padding: .5em;
@@ -303,6 +306,13 @@ canvas {
 
 .xml-request-table th {
     background-color: gray;
+}
+
+.apiData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
 }
 
 /* Contacts page */
