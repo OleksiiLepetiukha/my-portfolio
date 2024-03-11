@@ -32,3 +32,40 @@ $(document).ready(function () {
     $(".ajax-request-text").load("../data/data.txt").css('border', '#000 solid 1px');
   });
 });
+
+//    Fetch API
+
+const fetchBtn = document.querySelector('.apiBtn');
+const apiUrl = 'https://dog.ceo/api/breeds/image/random';
+const dataSet = document.querySelector('.apiData');
+let apiImg = document.createElement('img');
+
+function getData() {
+ 
+    fetch(apiUrl).
+      then(response => {
+        if (!response.ok) {
+          if (response.status === 404) {
+            throw new Error('Data not found');
+          }
+          else if (response.status === 500) {
+            throw new Error('Server Error');
+          } else {
+            throw new Error('Network response was not ok')
+          }
+        }
+        return response.json();
+      })
+      .then(data => {
+        let jsonData = new Object(data);
+        apiImg.setAttribute('src', jsonData.message);
+        apiImg.setAttribute('width', '100%');
+        dataSet.appendChild(apiImg);
+      })
+      .catch(error => {
+        console.error('Error: ', error);
+      });
+      
+  fetchBtn.textContent = 'Change pictures';
+}
+fetchBtn.addEventListener('click', getData);
